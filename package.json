@@ -20,6 +20,7 @@
     "@discordjs/opus": "^0.3.3",
     "discord.js": "^12.5.1",
     "dotenv": "^8.2.0",
+    "ffmpeg-static": "^4.2.7",
     "mongodb": "^3.6.3",
     "node-fetch": "^2.6.1",
     "opus": "0.0.0",
