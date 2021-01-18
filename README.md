@@ -6,7 +6,6 @@ Basic icebreaker-bot with commands to break the tension.
 | ------------- | ------------- | ------------- |
 | cat  | Sends a cat!  | $cat |
 | coinflip  | Heads or tails?  | $coinflip or $cf  |
-| dbconnect  | Function that tests connection to mongoDB  | $dbconnect |
 | fight  | Fights a mentioned user and generates a random winner | $fight [@mention] |
 | give  | Gives a random gift to the mentioned user  | $give [@mention] |
 | help  | Sends a proper usage log to the chat  |  $help  or     $ |
