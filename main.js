@@ -60,8 +60,6 @@ client.on('message', message => {
         client.commands.get('give').execute(message, args);
     }else if (command === 'leave') {
         client.commands.get('leave').execute(message, args);
-    } else if (command === 'dbconnect') {
-        client.commands.get('dbconnect').execute(message, args);
     } else {
         message.channel.send('Unrecognized command. Enter $help for proper usage');
     }
