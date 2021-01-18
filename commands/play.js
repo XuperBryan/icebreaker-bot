@@ -14,6 +14,7 @@ module.exports = {
         if (!permissions.has('SPEAK')) return message.channel.send('You dont have the correct permissions');
         if (!args.length) return message.channel.send('You need to send the second argument!');
  
+        console.log("got through the if checks");
         const validURL = (str) =>{
             var regex = /(http|https):\/\/(\w+:{0,1}\w*)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%!\-\/]))?/;
             if(!regex.test(str)){
@@ -39,9 +40,10 @@ module.exports = {
             return
         }
  
-        
+        console.log("got through the url check");
         const  connection = await voiceChannel.join();
- 
+        console.log("joining voice channel");
+
         const videoFinder = async (query) => {
             const videoResult = await ytSearch(query);
  
@@ -50,7 +52,8 @@ module.exports = {
         }
  
         const video = await videoFinder(args.join(' '));
- 
+        console.log("about to play video");
+
         if(video){
             const stream  = ytdl(video.url, {filter: 'audioonly'});
             connection.play(stream, {seek: 0, volume: .3})
